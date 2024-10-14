@@ -1,0 +1,10 @@
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #666;
+}
