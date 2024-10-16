@@ -1,0 +1,13 @@
+.experience {
+  font-size: 1rem;
+}
+
+.job h3 {
+  color: #61dafb;
+}
+
+.job p {
+  margin: 10px 0;
+  color: #333;
+  line-height: 1.6;
+}
