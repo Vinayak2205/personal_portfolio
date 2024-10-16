@@ -1,0 +1,54 @@
+.projects {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: #007acc; /* Adjust this color to fit your theme */
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.project p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 10px;
+  }
+
+  .project h3 {
+    font-size: 1.3rem;
+  }
+
+  .project p {
+    font-size: 0.9rem;
+  }
+}
