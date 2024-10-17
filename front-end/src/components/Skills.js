@@ -19,9 +19,9 @@ const Skills = () => {
         <h1>My Skills</h1>
         <div className="skill-list">
           {skillList.map((skill, index) => (
-            <div key={index} className="skill-card">
+            <a href="#" key={index} className="skill-button">
               {skill}
-            </div>
+            </a>
           ))}
         </div>
       </div>
