@@ -1,54 +1,101 @@
 .projects {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    135deg,
+    #001f33,
+    #003366
+  ); /* Same gradient as header */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+  flex-direction: column; /* Stack content vertically */
 }
 
-h2 {
-  font-size: 2rem;
-  color: #333;
-  text-align: center;
-  margin-bottom: 30px;
+/* Same Radial Gradient Effect */
+.projects::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1),
+    transparent 70%
+  );
+  animation: spin 20s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content {
+  max-width: 1200px;
+  padding: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column; /* Ensure the content stacks vertically */
+  align-items: center;
+}
+
+.projects h2 {
+  font-size: 4.5rem;
+  color: #ffffff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  letter-spacing: 3px;
+  transition: transform 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.projects h2:hover {
+  transform: translateY(-5px);
 }
 
 .project {
-  background-color: white;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  max-width: 800px;
+  text-align: left;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 10px; /* Slight rounding for the project container */
 }
 
 .project h3 {
-  font-size: 1.5rem;
-  color: #007acc; /* Adjust this color to fit your theme */
+  font-size: 2rem;
+  color: #ffffff;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .project p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.project p:last-child {
-  margin-bottom: 0;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
-  .projects {
-    padding: 10px;
+  .projects h2 {
+    font-size: 3.5rem;
   }
 
   .project h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .project p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
