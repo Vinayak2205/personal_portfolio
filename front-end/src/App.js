@@ -1,22 +1,17 @@
-// src/App.js
+import { Routes, Route } from "react-router-dom";
 
-import React from "react";
-import Header from "./components/Header";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
+import Homepage from "./pages/homepage";
 
-function App() {
+import "./app.css";
+
+const App = () => {
   return (
     <div className="App">
-      <Header />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
