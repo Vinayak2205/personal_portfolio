@@ -16,6 +16,7 @@ import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 
 import "./styles/homepage.css";
+import Works from "../components/homepage/works";
 
 const Homepage = () => {
   const [stayLogo, setStayLogo] = useState(false);
@@ -172,6 +173,10 @@ const Homepage = () => {
                   className="homepage-social-icon"
                 />
               </a>
+            </div>
+
+            <div className="homepage-works">
+              <Works />
             </div>
 
             <div className="page-footer">
