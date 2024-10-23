@@ -8,6 +8,8 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
+import "./styles/socials.css";
+
 const Socials = () => {
   return (
     <div className="socials">
