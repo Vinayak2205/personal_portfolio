@@ -6,6 +6,8 @@ import { faFaceSadTear } from "@fortawesome/free-regular-svg-icons";
 import NavBar from "../components/common/navBar";
 import Logo from "../components/common/logo";
 
+import "./styles/404.css";
+
 const Notfound = () => {
   useEffect(() => {
     document.title = "404 | Portfolio by Vinayak";
