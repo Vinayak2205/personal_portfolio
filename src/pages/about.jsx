@@ -6,6 +6,8 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
 
+import "./styles/about.css";
+
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
