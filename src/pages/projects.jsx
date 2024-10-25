@@ -5,6 +5,8 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
+import "./styles/projects.css";
+
 const Projects = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
