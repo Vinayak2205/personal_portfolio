@@ -6,6 +6,8 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
 
+import "./styles/contact.css";
+
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
