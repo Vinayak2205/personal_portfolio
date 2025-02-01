@@ -26,7 +26,7 @@ const Footer = () => {
 
         <div className="footer-credits">
           <div className="footer-credits-text">
-            © 2024 Vinayak Thete. All Rights Reserved.
+            © 2025 Vinayak Thete. All Rights Reserved.
           </div>
         </div>
       </div>

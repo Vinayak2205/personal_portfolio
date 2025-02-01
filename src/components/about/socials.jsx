@@ -22,7 +22,7 @@ const Socials = () => {
           <div className="social-icon">
             <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
           </div>
-          <div className="social-text">Follow on Twitter</div>
+          <div className="social-text">Follow on LinkedIn</div>
         </a>
       </div>
 
